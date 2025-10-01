@@ -15,8 +15,8 @@ let quote;
 async function fetchQuotes() {
   try {
     const response = await fetch("https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/3-javascript/challenges/group_1/data/random-quotes.json");
-    
-    if(!response.ok) {
+
+    if (!response.ok) {
       throw new Error("Can't fetch quotes");
     }
     data = await response.json();
@@ -50,6 +50,7 @@ randomBtn.addEventListener("click", () => {
 
 // show the popup when the random button is clicked for the first time
 randomBtn.addEventListener("click", () => {
+  popup.textContent = "Press space to get a new quote!";
   popup.style.opacity = "1";
   setTimeout(() => {
     popup.style.opacity = "0";
@@ -59,7 +60,6 @@ randomBtn.addEventListener("click", () => {
 popup.addEventListener("click", () => {
   popup.style.opacity = "0";
 });
-
 
 // press space to get a new quote
 document.addEventListener("keydown", (e) => {
@@ -72,6 +72,11 @@ document.addEventListener("keydown", (e) => {
 // copy the quote to the clipboard
 shareBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(`${quoteBody.textContent} ${authorheading.textContent}`);
+  popup.textContent = "Quote added to clipboard";
+  popup.style.opacity = "1";
+  setTimeout(() => {
+    popup.style.opacity = "0";
+  }, 4000);
 });
 
 // run the quote generator for the first time

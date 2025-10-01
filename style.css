@@ -140,7 +140,6 @@
     margin-block-end: var(--sp-400);
     padding: 36px clamp(16px, 4vw, 36px) 40px;
     max-inline-size: 500px;
-    height: calc-size(auto);
     background-color: var(--clr-surface);
     background-image: url("./resources/bg-image-random-quote.svg");
     background-repeat: no-repeat;
