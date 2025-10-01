@@ -80,3 +80,4 @@ shareBtn.addEventListener("click", () => {
   quotePicker();
   updateUI();
 })();
+
