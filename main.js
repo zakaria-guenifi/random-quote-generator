@@ -72,9 +72,11 @@ document.addEventListener("keydown", (e) => {
 // copy the quote to the clipboard
 shareBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(`${quoteBody.textContent} ${authorheading.textContent}`);
-  popup.textContent = "Quote added to clipboard";
+  popup.style.display = "block";
+  popup.textContent = "Added to clipboard";
   popup.style.opacity = "1";
   setTimeout(() => {
+    popup.style.display = "none";
     popup.style.opacity = "0";
   }, 4000);
 });

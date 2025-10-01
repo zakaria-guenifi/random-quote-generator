@@ -219,6 +219,7 @@
     border-radius: 24px;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
+    
     @media (width < 768px) {
       display: none;
     }
