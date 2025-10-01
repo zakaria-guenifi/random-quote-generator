@@ -16,7 +16,7 @@
 <body>
   <main>
     <article class="quote-card" aria-labelledby="author">
-      <h3 class="author">George Bernard Shaw</h3>
+      <h3 class="author" aria-live="polite">George Bernard Shaw</h3>
       <ul>
         <li>Famous Quotes</li>
         <li>Inspirational</li>
@@ -25,17 +25,14 @@
     </article>
     <div class="buttons">
       <button class="btn" type="button" id="random-btn">Random
-        <span aria-hidden="true">
           <img src="./resources/regroup.svg" alt="">
-        </span>
       </button>
       <button class="btn" type="button" id="share-btn">Share
-        <span aria-hidden="true">
           <img src="./resources/link.svg" alt="">
-        </span>
       </button>
     </div>
   </main>
+  <div class="popup" >Press space to get a new quote</div>
   <script src="./main.js"></script>
 </body>
 
