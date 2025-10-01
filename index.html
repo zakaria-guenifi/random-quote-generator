@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./resources/favicon.ico" type="image/ico">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
   <title>Random Quote Generator | Zakaria Guenifi</title>
 </head>
-<body>
 
-  <script src="/main.js"></script>
+<body>
+  <main>
+    <article class="quote-card" aria-labelledby="author">
+      <h3 class="author">George Bernard Shaw</h3>
+      <ul>
+        <li>Famous Quotes</li>
+        <li>Inspirational</li>
+      </ul>
+      <p class="quote-body" aria-live="polite">“Learn from yesterday, live for today and hope for tomorrow.”</p>
+    </article>
+    <div class="buttons">
+      <button class="btn" type="button" id="random-btn">Random
+        <span aria-hidden="true">
+          <img src="./resources/regroup.svg" alt="">
+        </span>
+      </button>
+      <button class="btn" type="button" id="share-btn">Share
+        <span aria-hidden="true">
+          <img src="./resources/link.svg" alt="">
+        </span>
+      </button>
+    </div>
+  </main>
+  <script src="./main.js"></script>
 </body>
+
 </html>
